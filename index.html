@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
+	<head>
+		<meta charset="UTF-8" />
         <title>Nina Carducci - Photographe</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
@@ -32,7 +33,6 @@
             href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
             rel="stylesheet"
         />
-        <meta charset="UTF-8" />
         <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
         <script
             src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -93,26 +93,23 @@
                     </ul>
                 </nav>
             </section>
-            <section
+            <div
                 id="carouselExampleIndicators"
                 class="carousel slide"
                 data-bs-ride="carousel"
             >
                 <div class="carousel-indicators">
                     <span
-                        type="button"
                         data-bs-target="#carouselExampleIndicators"
                         data-bs-slide-to="0"
                         class="active"
                         aria-current="true"
                     ></span>
                     <span
-                        type="button"
                         data-bs-target="#carouselExampleIndicators"
                         data-bs-slide-to="1"
                     ></span>
                     <span
-                        type="button"
                         data-bs-target="#carouselExampleIndicators"
                         data-bs-slide-to="2"
                     ></span>
@@ -142,7 +139,6 @@
                 </div>
                 <span
                     class="carousel-control-prev"
-                    type="button"
                     data-bs-target="#carouselExampleIndicators"
                     data-bs-slide="prev"
                 >
@@ -150,13 +146,12 @@
                 </span>
                 <span
                     class="carousel-control-next"
-                    type="button"
                     data-bs-target="#carouselExampleIndicators"
                     data-bs-slide="next"
                 >
                     <span class="carousel-control-next-icon"></span>
                 </span>
-            </section>
+            </div>
         </header>
         <main>
             <section id="about">
@@ -166,7 +161,7 @@
                         alt="Protrait de Nina Carducci"
                     />
                 </div>
-                <section class="about-me">
+                <div class="about-me">
                     <h2 class="about-me__title">À propos de moi</h2>
                     <p id="about-me__introduction">
                         Devenir photographe était pour moi une évidence. Comme
@@ -186,7 +181,7 @@
                         l’amour, du bonheur, de la tendresse et de lumière à
                         chaque fois que vous poserez les yeux sur vos photos.
                     </p>
-                </section>
+                </div>
             </section>
             <section id="gallery">
                 <h2 class="title">Portfolio</h2>
@@ -322,7 +317,7 @@
                             N’hésitez pas à m’écrire ! Je vous répondrais en
                             moins de 24 heures
                         </p>
-                        <form action="" method="post">
+                        <form action="#" method="post">
                             <p>
                                 <label for="nom">Nom</label>
                                 <input
@@ -344,6 +339,7 @@
                                     id="message"
                                     cols="30"
                                     rows="10"
+									placeholder="Laissez moi votre message !"
                                 ></textarea>
                                 <input type="submit" value="Envoyer" />
                             </p>
